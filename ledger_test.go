@@ -35,7 +35,7 @@ func setupLedger(t *testing.T, yamlCfg string) string {
 func sendUsage(t *testing.T, model, apiKey, session string, total int64, at time.Time) {
 	t.Helper()
 	raw, errMarshal := json.Marshal(map[string]any{
-		"RequestID":   "req-" + model + apiKey,
+		"RequestID":   "req-" + model + "-" + session,
 		"Provider":    "claude",
 		"Model":       model,
 		"APIKey":      apiKey,
