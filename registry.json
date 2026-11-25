@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "plugins": [
+    {
+      "id": "usage-ledger",
+      "name": "Usage Ledger",
+      "description": "Records every model request with its client API key, session, upstream account and token counts to a persistent JSONL ledger, and adds a Usage Ledger page to the management UI that shows who spent the tokens on each model over any time window. Raw keys are never stored; name them with key_labels. Made to work alongside Safeguard Killer (https://github.com/esauvisky/CLIProxyAPI-Safeguard-Killer-Plugin).",
+      "author": "esauvisky",
+      "version": "0.1.0",
+      "repository": "https://github.com/esauvisky/CLIProxyAPI-Usage-Ledger-Plugin",
+      "homepage": "https://github.com/esauvisky/CLIProxyAPI-Usage-Ledger-Plugin",
+      "logo": "https://raw.githubusercontent.com/esauvisky/CLIProxyAPI-Usage-Ledger-Plugin/main/assets/logo.png",
+      "license": "MIT",
+      "tags": ["usage", "tokens", "accounting", "audit", "api-keys", "ui"]
+    }
+  ]
+}
